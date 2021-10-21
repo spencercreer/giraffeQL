@@ -1,0 +1,25 @@
+{
+  "name": "giraffeql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "concurrently \"cd server & npm run watch\" \"cd client && npm start\"",
+    "seed": "cd server && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spencercreer/giraffeQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spencercreer/giraffeQL/issues"
+  },
+  "homepage": "https://github.com/spencercreer/giraffeQL#readme",
+  "dependencies": {
+    "concurrently": "^6.3.0"
+  }
+}
