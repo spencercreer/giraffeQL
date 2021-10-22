@@ -15,7 +15,7 @@ db.once('open', async () => {
         dbLibrary.push({title, author, pages})
     }
 
-    await Book.collections.insertMany(dbLibrary)
+    await Book.collection.insertMany(dbLibrary)
     console.log('faker has completed data migration')
     console.table(dbLibrary)
     process.exit(0)

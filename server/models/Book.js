@@ -11,7 +11,7 @@ const BookSchema = new Schema({
     },
     pages: {
         type: Number,
-        required
+        required: true
     }
 })
 

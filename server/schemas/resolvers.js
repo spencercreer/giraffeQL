@@ -14,7 +14,7 @@ const resolvers = {
     },
 
     // similar to Post, Put, and Delete in REST API
-    Mutations: {
+    Mutation: {
         addBook: async(parent, args) => {
             const book = await Book.insertMany(args)
             return book
