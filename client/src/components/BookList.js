@@ -8,7 +8,7 @@ const BookList = ({books}) => {
 
     return (
         <div>
-            {book
+            {books
                 && books.map((book) => (
                     <Card>
                         <CardHeader>Title: {book.title}</CardHeader>
@@ -21,3 +21,5 @@ const BookList = ({books}) => {
         </div>
     )
 }
+
+export default BookList
